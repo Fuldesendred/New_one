@@ -1,0 +1,54 @@
+.h1{
+    font-family: Exo2;
+    font-size: 56px;
+    font-style: normal;
+    margin: 0px;
+    font-weight: 700;
+    line-height: 90%;
+}
+
+.h2 {
+    font-family: Exo2;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+    line-height: 100%;
+}
+
+.h3 {
+    font-family: Exo2;
+    font-size: 32px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.h4 {
+    color: #000;
+    font-family: Exo2;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    margin: 0;
+}
+
+@media (max-width: 1148px) {
+    .h1{
+        font-size: 32px;
+    }
+
+    .h2 {
+        font-size: 28px;
+    }
+
+    .h3 {
+        font-size: 26px;
+    }
+
+    .h4 {
+        font-size: 24px;
+    }
+}
