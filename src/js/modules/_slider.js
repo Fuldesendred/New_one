@@ -1,25 +1,19 @@
 import Swiper from "swiper";
-import { Navigation, Pagination} from "swiper/modules";
-
-const initSlider = () => { 
-    const swiper = new Swiper ('.swiper', {
-        modules: [Navigation, Pagination],
-        slidesPerView: 4,
-
-        navigation: {
-            nextEl: '.slider__next',
-            prevEl: '.slider__prev',
-        },
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true
-        }
-})};
 
 
+const swiper = new Swiper(".swiper", {
+    slidesPerView: 4,
+    spaceBetween: 0.1,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 
-
-
-export default initSlider
+export default swiper
 

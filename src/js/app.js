@@ -1,11 +1,9 @@
-import initSlider from './modules/_slider.js'
 import A11yDialog from 'a11y-dialog'
+import swiper from "../js/modules/_slider.js"
 
 const init = () => {
-    initSlider()
+    swiper()
 }
-
-init()
 
 const container = document.querySelector('#dialog-window')
 const dialog = new A11yDialog(container)

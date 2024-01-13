@@ -703,14 +703,42 @@
     } 
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    content: "";
-}
 
 
 @media (max-width: 1148px) {
 
+    .mission{
+
+        &__slider{
+            min-width: 738px;
+            max-width: 1148px;
+            background-size: cover;
+
+            &__header{
+                display: inline-flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            &__title{
+                width: 227px;
+                height: 65px;
+            }
+
+            &__info{
+                width: 249px;
+                height: 58px;
+            }
+
+        }
+    }
+
+    .slider__btn-call{
+        width: 180px;
+        height: 50px;
+        
+    }
 
     .history-company{
         &__content{
