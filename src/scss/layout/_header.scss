@@ -49,10 +49,10 @@
     top: -7px;
 }
 
-@media (max-width: 1148px) {
+@media (max-width: $tablet-bp) {
 
     .header__content{
-        margin-bottom: 14px;
+        margin-bottom: 14px;       
     }
 
     .line{
@@ -63,11 +63,21 @@
         display: block;
         max-height: 100%;
         transition: all .5s ease-in;
+        
+        @media (max-width: 768px) {
+            margin-top: 134px;
+            
+        }
     }
 
     .hamburger{
         display: block;
         padding: 20px 0;
+              
+        @media (max-width: 768px) {
+            position: absolute;
+            top: 110px;
+        }
     }
 
     #checkbox_toggle:checked ~ .hamburger .hamburger-line{

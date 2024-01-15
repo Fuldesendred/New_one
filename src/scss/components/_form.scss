@@ -39,3 +39,12 @@
 
 }
 
+@media (max-width: $mobile-bp) {
+    .form{
+        align-self: auto;
+        &__input{
+            max-width: 298px;
+            min-width: 278px;
+        }
+    }   
+}

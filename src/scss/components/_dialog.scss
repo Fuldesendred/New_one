@@ -40,7 +40,8 @@
         padding: 40px 60px;
         border-radius: 20px;
         gap: 40px;
-        max-width: 1040px;
+        width: 1040px;
+        
         height: auto;
     }
 
@@ -83,4 +84,21 @@
     }
 }
 
+@media (max-width: $tablet-bp) {
+    .dialog {
+        &__window {
+            width: 728px;
+            
+        }
+    }
+}
 
+@media (max-width: $mobile-bp) {
+    .dialog {
+        &__window {
+            max-width: 335px;
+            min-width: 315px;
+            padding: 40px 20px;
+        }
+    }
+}

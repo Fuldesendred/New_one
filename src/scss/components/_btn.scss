@@ -65,7 +65,7 @@
     }
 }
 
-@media (max-width: 1148px) {
+@media (max-width: $tablet-bp) {
     .btn-tipical{
         padding: 16px 20px;
         background-color: var(--nav-director);

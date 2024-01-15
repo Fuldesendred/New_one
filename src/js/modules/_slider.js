@@ -1,19 +1,20 @@
 import Swiper from "swiper";
 
-
 const swiper = new Swiper(".swiper", {
-    slidesPerView: 4,
+    slidesPerView: 1, 
     spaceBetween: 0.1,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+
+    breakpoints: {
+        1148: {
+            slidesPerView: 4,
+            spaceBetween: 0.1,
+        },
+
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 0.1,
+        },
+    }
 });
 
 export default swiper
-

@@ -25,6 +25,7 @@
     <!-- Styles -->
     @@include('layout/_styles.html')
 </head>
+
 <body>
     <!-- Header -->
     @@include('layout/_header.html')
@@ -133,7 +134,7 @@
                             <br>
                             Короткая справка о результатах деятельности Компании в Новосибирске:
                         </p>
-                        <button class="company-now__btn btn-tipical reset-btn">Призыв к действию</button>
+                        <button class="company-now__btn btn-tipical reset-btn" type="button">Призыв к действию</button>
                     </div>
                     <div class="company-now__cards">
                         <!-- Карточка 1 -->
@@ -445,7 +446,7 @@
                         <div class="achievements__group">
                             <h4 class="achievements__header h4">Производство</h4>
                             <p class="achievements__text__content history-text">Наша Компания занимает лидирующие позиции в направлении производства пластиковых окон в Новосибирске и Кемерово, что подтверждается ростом ежегодной производительности в объемах, в среднем - это</p>
-                            <p class="achievements__text__content information-title">
+                            <p class="achievements__text__title information-title">
                                 <strong class="h4">+37%</strong> год от года
                             </p>
                             <button class="achievements__button btn-tipical reset-btn">Подробнее</button>
@@ -530,7 +531,7 @@
                             </div>
                         </article>
 
-                        <article class="reviews__card">
+                        <article class="reviews__card reviews__card-2">
                             <h4 class="visually-hidden">Отзывник</h4>
                             <div class="reviews__pic">
                                 <picture>
@@ -628,8 +629,7 @@
                                 <img src="./assets/images/Rectangle-right.png" alt="Rectangle-right">
                             </picture>
                         </div>
-                    </div>
-                    
+                    </div> 
                 </div>
                 
             </div>    
@@ -642,19 +642,7 @@
             <div class="container">
                 <div class="swiper">
                     <div class="sertificates__header">
-                        <p class="sertificates__title h2">Сертификаты</p>                    
-                        <div class="sertificates__buttons">
-                            <button class="sertificates__btn1 slider-btn reset-btn" type="button">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16.2541 4.24106C16.5522 4.53326 16.5793 4.99051 16.3354 5.31272L16.2541 5.40503L9.52658 12L16.2541 18.595C16.5522 18.8872 16.5793 19.3444 16.3354 19.6666L16.2541 19.7589C15.956 20.0511 15.4896 20.0777 15.161 19.8386L15.0668 19.7589L7.7459 12.582C7.44784 12.2898 7.42074 11.8325 7.66461 11.5103L7.7459 11.418L15.0668 4.24106C15.3947 3.91965 15.9262 3.91965 16.2541 4.24106Z" fill="black"/>
-                                </svg>
-                            </button>
-                            <button class="sertificates__btn2 slider-btn reset-btn" type="button">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.7459 19.7589C7.44784 19.4667 7.42074 19.0095 7.66461 18.6873L7.7459 18.595L14.4734 12L7.7459 5.40503C7.44784 5.11283 7.42074 4.65558 7.66461 4.33337L7.7459 4.24106C8.04396 3.94886 8.51037 3.9223 8.83904 4.16137L8.93321 4.24106L16.2541 11.418C16.5522 11.7102 16.5793 12.1675 16.3354 12.4897L16.2541 12.582L8.93321 19.7589C8.60534 20.0804 8.07376 20.0804 7.7459 19.7589Z" fill="black"/>
-                                </svg>
-                            </button>
-                        </div>                  
+                        <p class="sertificates__title h2">Сертификаты</p>                                     
                     </div>
                     <!-- Слайды -->
                  
@@ -781,7 +769,7 @@
                             </div>
                         </article>
                         <!--Пагинация-->
-                        <div class="sertificates-slider__block-pag swiper-pagination">
+                        <div class="sertificates-slider__block-pag ">
                             <picture class="sertificates-slider__pagination">
                                 <img src="./assets/images/sertificates/pagination.svg" alt="pagination">
                             </picture>
@@ -927,9 +915,7 @@
                                 <img src="./assets/images/Rectangle-right.png" alt="Rectangle-right">
                             </picture>
                         </div>
-                    </div>
-
-                    
+                    </div>                   
                 </div>
             </div>
         </section>
@@ -944,4 +930,5 @@
     <!-- Scripts -->
     @@include('layout/_scripts.html')
 </body>
+
 </html>

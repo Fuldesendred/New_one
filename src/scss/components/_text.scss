@@ -103,7 +103,7 @@
     margin: 0;
 }
 
-@media (max-width:1148px) {
+@media (max-width: $tablet-bp) {
     .history-text {
         color: var(--history-info);
         font-family: Exo2;

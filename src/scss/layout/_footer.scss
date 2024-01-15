@@ -143,7 +143,7 @@
     }
 }
 
-@media (max-width: 1148px) {
+@media (max-width: $tablet-bp) {
     
     .footer {
         &__content{ 
@@ -176,3 +176,4 @@
         }
     }
 }
+

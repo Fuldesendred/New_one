@@ -20,6 +20,25 @@
         gap: 2px;
         align-items: center;
     
+        :nth-child(1) {
+            animation: show 1s both 0.2s;
+        }
+
+        :nth-child(2) {
+            animation: show 1s both 0.4s;
+        }
+
+        :nth-child(3) {
+            animation: show 1s both 0.5s;
+        }
+
+        :nth-child(4) {
+            animation: show 1s both 0.6s;
+        }
+
+        :nth-child(5) {
+            animation: show 1s both 0.8s;
+        }
 
         &:hover{
             & > p {
@@ -130,12 +149,15 @@
     }
 }
 
-@media (max-width: 1148px) {
+@media (max-width: $tablet-bp) {
 
     .top-nav{
         &__logo{
             position: absolute;
             left: 90px;
+            @media (max-width: 768px) {
+                left: 60px;
+            }
         }
     }
 
@@ -187,5 +209,49 @@
         max-height: 0;
         overflow: hidden;
         position: absolute;    
+    }
+}
+
+@media (max-width: $mobile-bp) {
+    .top-nav{
+        justify-content: flex-start;
+        height: 144px;
+
+        &__feedback{
+            justify-content: space-between;
+            align-items: center;
+            background-color: #DCEAF8;
+            height: 42px;
+            width: auto;
+            gap: 0px;
+            width: 100%;
+        }
+
+        &__logo{
+            top: 105px;
+        }
+
+        &__btn{
+            height: 30px;
+            width: 130px;
+            font-size: 12px;
+        }
+    }
+
+    .contact{
+        gap: 0px;
+        &__director{
+            display: none;
+        }
+
+        &__tel{
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+
+    .menu{
+        
+        min-width: 250px;
     }
 }

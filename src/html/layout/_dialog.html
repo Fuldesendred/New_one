@@ -11,7 +11,7 @@
 
         <h2 class="dialog__title h2">Заказать обратный звонок</h2>
 
-        <form class="form">
+        <form class="form" id="sent-up">
             <div class="form__input-text">
                 <label class="visually-hidden" for="input-name">Введите имя</label>
                 <input  class="form__input" type="text" name="input-name" id="input-name" placeholder="Имя">
@@ -23,7 +23,7 @@
         </form>
         
         <div class="dialog__end-werify">
-            <button class="dialog__btn-applicaton btn-tipical reset-btn">Отправить</button>
+            <button class="dialog__btn-applicaton btn-tipical reset-btn" type="submit" form="sent-up">Отправить</button>
             <p class="dialog__personal employee employee_personal">Нажимая на кнопку, вы принимаете Положение и Согласие <br> на обработку персональных данных</p>
         </div>
     </div>
